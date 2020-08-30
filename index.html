@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="vendors/css/node_modules/normalize.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+	<link rel="icon" type="image/icon" href="resources/img/logo.png">
+	<title>V'STAND</title>
+</head>
+<body onload = "checkLogin(); kritikSaran()">
+	<header>
+		<nav>
+			<div id = "nav" class="row"> 
+				<img src="resources/img/logo-white.png" alt="V'Stand Logo" class="logo">
+<!--				<img src="resources/img/logo.png" alt="V'Stand Logo" class="logo-black"> -->
+				<div>
+					<ul class="main-nav js--main-nav">  
+					<li>V'Stand</li>
+					<li><a href="#works">Cara Kerja</a></li>
+					<li><a href="#cities">Lokasi Kami</a></li>
+					<li><a href="#plans">Pesan</a></li>
+					<li><a href="#kritik">Kritik & Saran</a></li>
+					<li id="navigasilogin"><a href="login.html">Login</a></li>
+				<!-- </ul>
+				<ul id="navigasilogout" class="main-nav js--main-nav">  
+								<li><a href="#features">V'Stand</a></li>
+								<li><a href="#works">Cara Kerja</a></li>
+								<li><a href="#cities">Lokasi Kami</a></li>
+								<li><a href="#plans">Pesan</a></li>
+								<li><a href="#kritik">Kritik & Saran</a></li> -->
+					<li id="navigasilogout"><a onclick = "logout()" href = "#">Logout</a></li>
+							</ul>
+				</div>
+				<script src="js/login.js"></script>
+				<a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a> 
+			</div>
+		</nav>
+		<div class="hero-text">
+			<h1>Halo Standian!<br> Selamat Datang di V'STAND :)</h1>
+			<a class="btn btn-full js--scroll-to-plans" href="#">Saya Lapar !</a>
+			<a class="btn btn-ghost js--scroll-to-start" href="#features">Lihat Selengkapnya...</a>
+		</div>
+	</header>
+	
+	<!-- Features section -->
+	
+	<section class="features js--features" id="features"> 
+		<div class="row">
+			<h2>V'STAND</h2> <!-- Longer dash + only use one h1, so using h2 -->
+			<p class="long-copy">
+				Tidak hanya bersih dan sehat, namun juga murah meriah
+			</p>
+		</div>
+		<!-- Grid using col -->
+	
+	<!-- Meals section -->
+
+			<div id="slider">
+				<div id="slide-holder">
+					<div class="slide"> <img src="resources/img/1.jpg"></div>
+					<div class="slide"> <img src="resources/img/2.jpg"></div>
+					<div class="slide"> <img src="resources/img/3.jpg"></div>
+					<div class="slide"> <img src="resources/img/8.jpg"></div>
+				</div>
+			</div>
+		
+	</section>
+	
+	<!-- How it works section -->
+
+	<section class="steps" id="works">
+		<div class="row">
+			<h2>Cara Kerja</h2>
+		</div>
+		<div class="row"> <!-- col for iphone, col for steps, all in same row -->
+			<div class="col span-1-of-2 steps-box">
+				<img src="resources/img/logo.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
+			</div>
+			<div class="col span-1-of-2 steps-box">
+				<div class="works-steps">
+					<div>1</div>
+					<p>Pilih makanan stand sesuai selera Anda</p>
+				</div>
+				<div class="works-steps">
+					<div>2</div>
+					<p>Pesan makanan stand Anda melalui aplikasi mobile atau website ini. Anda juga dapat menghubungi kami!</p>
+				</div>
+				<div class="works-steps">
+					<div>3</div>
+					<p>Tunggu makanan stand sampai. Selamat menikmati!</p>
+				</div>
+				<p>Hanya di 0221-757575</p>
+				<a href="#" class="btn-app">
+					<img src="resources/img/download-app.svg" alt="App store">
+				</a>
+				<a href="#" class="btn-app">
+					<img src="resources/img/download-app-android.png" alt="Google play store">
+				</a>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Cities section-->
+
+	<section class="cities" id="cities">
+		<div class="row">
+			<h2>Lokasi Kami</h2>
+		</div>
+		<div class="row ">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0467216798124!2d106.61612971436094!3d-6.2575759630066505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fc7b260ca1ed%3A0xb83752eec7c57ddd!2sUniversitas+Multimedia+Nusantara!5e0!3m2!1sen!2sid!4v1538406683495" width="1150" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<!-- Testimonials section -->
+	<!-- Plans section -->
+	
+	<section class="plans js--section-plans" id="plans">
+		<div class="row">
+			<h2><a href="catalogue.html">Pesan Sekarang yuk!</a> </h2>
+		
+		
+			</div><!-- <div class="col span-1-of-3">
+			<a href="catalogue.html" class="btn btn-full">Lihat Pilihan</a> -->
+		</div>
+	</section>
+
+	<section class="testimonials">
+		<div class="row">
+			<h2>Quote</h2>
+			<div class="row">
+				<div class="col span-1-of-5">
+					<blockquote>
+						"Makanan itu harus mengenyangkan"
+					<cite><img src="resources/img/customer-1.jpg" alt="Livia Jessica">Livia Jessica - 00000013091</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-5">
+					<blockquote>
+						"Makanan itu harus murah"
+					<cite><img src="resources/img/customer-2.jpg" alt="Kevin Christian">Kevin Christian - 00000013308</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-5">
+					<blockquote>
+						"Makanan itu harus bisa dimakan"
+					<cite><img src="resources/img/customer-3.jpg" alt="Septaria Dwi Natapura">Septaria Dwi Natapura - 00000012781</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-5">
+					<blockquote>
+						"Makananku makanan manusia"
+					<cite><img src="resources/img/customer-4.jpg" alt="Reza Setiabudi">Reza Setiabudi - 00000012926</cite>
+					</blockquote>
+				</div>
+				<div class="col span-1-of-5">
+					<blockquote>
+						"Makananku, makananmu juga"
+					<cite><img src="resources/img/customer-5.jpg" alt="Sagita Sasmita Wijaya">Sagita Sasmita Wijaya - 00000022165</cite>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Form section -->
+
+	<div class="map-box" >
+
+		<div class="row">
+			<table id="tableKritik" class="col span-1-of-2">
+				<thead>
+					<tr>
+						<th>Kritik dan Saran</th>
+						<th>Nama</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>no data</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="form-box" onsubmit="onDocumentFinish();">
+			<div class="row" id="kritik">
+				<h2>Kritik dan Saran</h2>
+			</div>
+			<div class="row"> <!-- Look up forms/labels/inputs later with scripts -->
+				<form action="#" method="post" id="form">
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="name">Nama</label>
+						</div>
+						<div class="col span-2-of-3"> <!-- Google Chrome sees required-->
+							<input type="text" name="name" id="itemName" placeholder="Nama Anda" class="name" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label for="email">Email</label>
+						</div>
+						<div class="col span-2-of-3"> <!-- Google Chrome sees required-->
+							<input type="email" name="email" id="itemEmail" placeholder="Email Anda" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>Message</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<textarea name="message" id="itemMessage" placeholder="Kritik dan Saran Anda"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col span-1-of-3">
+							<label>&nbsp;</label>
+						</div>
+						<div class="col span-2-of-3"> 
+							<input type="submit" id="btnSubmit" value="Kirim">
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer section -->
+
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-2">
+				<ul class="footer-nav">
+					<li>
+						<a href="aboutus.html">About us</a>
+					</li>
+					<li>
+						<a href="#">iOS App</a>
+					</li>
+					<li>
+						<a href="#">Android App</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-icons">
+					<li><a href=""><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+					<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+					<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+				</ul>
+			</div>
+			<div class="row">
+				<p>Copyright &copy; 2018 by V'Stand.</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		document.getElementById("navigasilogout").style.display = "none";
+	</script>
+	<a href="#"><img src="resources/img/up.png" id = "myBtn" onclick="topFunction()"></a>
+	<script src="js/main.js"></script>
+	<!-- <script src="js/login.js"></script> -->
+	<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+	<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+	<script src="resources/js/scripts.js"></script> <!-- Sticky nav -->
+	<!-- <script src="http://maps.google.com/maps/api/js?sensor=true"></script> -->
+	<script src="vendors/js/gmaps.js"></script>
+</body>
+</html>
